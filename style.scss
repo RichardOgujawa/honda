@@ -1,4 +1,4 @@
-/* SCSS RGB */
+/* Color Palette */
 $carnelian: rgba(180, 4, 27, 1);
 $lava: rgba(204, 0, 27, 1);
 $bright-maroon: rgba(179, 53, 70, 1);
@@ -10,4 +10,15 @@ $white: rgb(247, 247, 247);
 
 html {
     background-color: $white;
+}
+
+body {
+    margin: 0px; 
+    font-family: 'Open Sans', sans-serif;}
+#menu {
+    height: 10vh;
+    background-color: red;
+}
+header ul{
+    list-style: none;
 }

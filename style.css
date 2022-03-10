@@ -1,5 +1,19 @@
-/* SCSS RGB */
+/* Color Palette */
 html {
   background-color: #f7f7f7;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#menu {
+  height: 10vh;
+  background-color: red;
+}
+
+header ul {
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
