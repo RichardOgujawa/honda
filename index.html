@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honda</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/icons/honda-icon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/icons/honda-logo-w.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;494&display=swap" rel="stylesheet">
@@ -16,19 +16,89 @@
 
 <body>
     <header>
-        <img class="logo" src="images/honda-logo.svg" alt="Honda logo">
-        <nav id="menu">
-            <ul id="top-nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <a id="cta" href="#"><button>Login</button></a>
+        <div class="headerContainer">
+            <div class="logoDiv">
+                <a href="#"><img class="logo" src="images/honda-logo-w.png" alt="Honda logo"></a>
+            </div>
+            <div class="navDiv">
+                <nav class="menu">
+                    <ul id="top-nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="ctaDiv">
+                <a id="cta" href="#"><button>Login</button></a>
+            </div>
+        </div>
     </header>
+    <div class="carousel">
+        <div class="slide1">
+            <div class="s1text">
+                <h1>Honda CBR 300R</h1><br>
+                <p>The Honda CBR 300R is a good beginner motorcycle because of its modest power delivery, low seat, light weight, and narrow chassis.
+                </p>
+                <br>
+                <hr>
+                <br>
+                <ul>
+                    <li><strong> Weight :</strong> 900</li>
+                    <li> <strong> Power :</strong> 100 Horsepower</li>
+                    <li><strong> Fuel Tank Capacity :</strong> 5.75 gallons</li>
+                </ul>
+                <br>
+            </div>
+            <img src="images/motorbike1-min.jpg">
+            <div>
+                <button>Purchase</button>
+            </div>
+        </div>
+        <div class="slide2">
+            <div class="s2text">
+                <h1>Honda CBR 400R</h1><br>
+                <p>The Honda CBR 300R is a good beginner motorcycle because of its modest power delivery, low seat, light weight, and narrow chassis.
+                </p>
+                <br>
+                <hr>
+                <br>
+                <ul>
+                    <li><strong> Weight :</strong> 900</li>
+                    <li> <strong> Power :</strong> 100 Horsepower</li>
+                    <li><strong> Fuel Tank Capacity :</strong> 5.75 gallons</li>
+                </ul>
+                <br>
+            </div>
+            <img src="images/motorbike2-min.jpg">
+            <div>
+                <button>Purchase</button>
+            </div>
+        </div>
+        <!-- <div class="slide3">
+            <div class="s3text">
+                <h1>Honda CBR 500R</h1><br>
+                <p>The Honda CBR 300R is a good beginner motorcycle because of its modest power delivery, low seat, light weight, and narrow chassis.
+                </p>
+                <br>
+                <hr>
+                <br>
+                <ul>
+                    <li><strong> Weight :</strong> 900</li>
+                    <li> <strong> Power :</strong> 100 Horsepower</li>
+                    <li><strong> Fuel Tank Capacity :</strong> 5.75 gallons</li>
+                </ul>
+                <br>
+            </div>
+            <img src="images/motorbike3-min.jpg">
+            <div>
+                <button>Purchase</button>
+            </div>
+        </div> -->
+    </div>
 
 </body>
 <script src="app.js"></script>
-
+<!--TRY USING A CONSTRUCTOR IN JS TO MAKE THE CAROUSEL SLIDES AND JUST PASS PARAMETERS INTO IT, OF TEXT AND IMAGE-->
 </html>
