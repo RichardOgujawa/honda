@@ -7,19 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honda</title>
     <link rel="stylesheet" href="style.css">
+
+    <!--IMPORTS-->
     <script src="https://kit.fontawesome.com/d908522f87.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+
+
 </head>
 
 <body>
+    <div class="bg">
+        <img src="ss/web-ss-min.jpg" alt="" id="bg-img-web">
+        <img src="ss/tablet-ss-min.jpg" alt="" id="bg-img-tab">
+        <img src="ss/mobile-ss-min.jpg" alt="" id="bg-img-mob">
+    </div>
+
     <header id="home">
         <nav class="navbar">
             <span class="logo">
-                <i class="fa-solid fa-motorcycle"></i>
-                <span class="logotxt">Bike</span>
+                <span class="logoDiv">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <span class="logotxt">Bike</span>
+                </span>
             </span>
+            <span class="hamburger-icon">
+                <i class="fa-solid fa-bars"></i></span>
+            <ul>
+                <li class="nav-links"><a href="google.com">Home</a></li>
+                <li class="nav-links"><a href="#">Shop</a></li>
+                <li class="nav-links"><a href="#">News</a></li>
+                <li class="nav-links"><a href="#">Contact</a></li>
+            </ul>
         </nav>
+
+        <div class="scroll-menu-container">
+            <ul class="scroll-ul">
+                <li id="home"><a href="contact.html">Home</a></li>
+                <li id="shop"><a href="#">Shop</a></li>
+                <li id="news"><a href="#">News</a></li>
+                <li id="contact"><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </header>
-    <script src="app.js"></script>
+
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,13 +6,140 @@
   padding: 0;
 }
 
-body {
-  background-image: url("ss/mobile-ss-min.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.bg {
+  width: 100%;
+}
+
+#bg-img-mob {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#bg-img-tab {
+  width: 100%;
+  height: auto;
+  display: none;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#bg-img-web {
+  width: 100%;
+  height: auto;
+  display: none;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .fa-motorcycle {
   color: #FCFCFD;
+  font-size: 15pt;
+}
+
+.logotxt {
+  color: #E66F51;
+  font-family: 'Lobster Two', cursive;
+  font-size: 14pt;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #264653;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0% 3%;
+}
+
+.navbar ul {
+  display: none;
+}
+
+.fa-bars {
+  color: #FCFCFD;
+  border: 1.5px solid #ffffff50;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.logoDiv {
+  cursor: pointer;
+}
+
+.scroll-menu-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  background: green;
+  padding-bottom: 5%;
+  padding-top: 1%;
+  padding-left: 10%;
+  width: 100%;
+}
+
+.scroll-active {
+  -webkit-clip-path: inset(0px 0px 100% 0px);
+          clip-path: inset(0px 0px 100% 0px);
+  -webkit-transition: 1s -webkit-clip-path ease;
+  transition: 1s -webkit-clip-path ease;
+  transition: 1s clip-path ease;
+  transition: 1s clip-path ease, 1s -webkit-clip-path ease;
+}
+
+.scroll-inactive {
+  -webkit-clip-path: inset(0px 0px 0% 0px);
+          clip-path: inset(0px 0px 0% 0px);
+}
+
+.scroll-menu-container a {
+  color: #FCFCFD;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 769px) {
+  #bg-img-mob {
+    display: none;
+  }
+  #bg-img-tab {
+    display: block;
+  }
+  #bg-img-web {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #bg-img-mob {
+    display: none;
+  }
+  #bg-img-tab {
+    display: none;
+  }
+  #bg-img-web {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
