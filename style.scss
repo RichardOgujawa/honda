@@ -3,15 +3,19 @@
 
 //VARIABLES
 $charcoal: #264653;
+$dark-char: #1c343f;
 $burnt-sienna: #E66F51;
 $white: #FCFCFD;
 $columbia-blue: #B2CED9;
+
+$btnpadding: 10px 25px;
 
 //MOBILE//
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
+    font-family: sans-serif;
 }
 
 .bg {
@@ -73,13 +77,15 @@ li {
 .navbar ul{
     display: none;
 }
-
+.nav-links-cont {
+    display: none;
+}
 .fa-bars {
     color: $white;
     border: 1.5px solid #ffffff50;
     border-radius: 3px;
     padding: 10px 15px;
-    cursor: pointer;
+    cursor: pointer;    
 }
  
 .logoDiv {
@@ -90,39 +96,30 @@ li {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    // background: red;
-    background: green;
-    padding-bottom: 5%;
-    padding-top: 1%;
-    padding-left: 10%;
+    background: $dark-char;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
     width: 100%;
-
+    align-items: center;
 }
 
-.scroll-active{
+.scroll-ul {
     clip-path: inset(0px 0px 100% 0px);
     transition: 1s clip-path ease;
 }
 
-.scroll-inactive{
+.scroll-active {
     clip-path: inset(0px 0px 0% 0px);
 }
-
 
 .scroll-menu-container a{
    color: $white;  
    text-decoration: none;
 }
 
-
-
-// header {
-//     display: none;
-// }
-
-
-
-
+#login {
+    display: none;
+}
 
 
 //TABLET//
@@ -136,6 +133,9 @@ li {
     }
 
     #bg-img-web {
+        display: none;
+    }
+    #login {
         display: none;
     }
 }
@@ -154,4 +154,42 @@ li {
     #bg-img-web {
         display: block;
     }
+    .navbar ul {
+        display: block;
+    }
+    .navbar ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    .nav-links-cont {
+        height: 100%;
+        flex-basis: 20%;
+    }
+    .nav-links-cont {
+        display: block;
+    }
+    .navbar ul {
+        gap: 30px;
+        height: 100%;
+        align-items: center;
+        display: flex;
+    }
+    .hamburger-icon {
+        display: none;
+    }
+    .logo {
+        flex-basis: 54%;
+    }
+
+    #login {
+        background-color: $burnt-sienna;
+        color: $white;
+        border: none;
+        padding: $btnpadding;
+        border-radius: 2px;
+        flex-basis: auto;
+        cursor: pointer;
+        display: block;
+    }
+
 }

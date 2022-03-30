@@ -8,6 +8,7 @@ This is a redesign of a <a href="https://devhonufa.github.io/honda/"> website by
 - HTML
 - SCSS 
 - JS 
+- JQuery
 - Markdown
 - PHP 
 

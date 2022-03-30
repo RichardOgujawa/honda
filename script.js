@@ -1,7 +1,8 @@
-$(document).ready(function() {
-    $(".fa-bars").click(function() {
-        $(".scroll-ul").addClass("scroll-active"); 
-    });
+function menuScrollFunc(){
+var menuScroll = document.querySelector('.scroll-ul');
 
-    //https://www.youtube.com/watch?v=BfH5aeeZvh0 WATCH THIS TO KNOW HOW TO DO THE HAMBURGER ICON
-});
+console.log("Hi");
+
+menuScroll.classList.toggle('scroll-active');
+
+}

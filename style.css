@@ -4,6 +4,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 .bg {
@@ -72,6 +73,10 @@ li {
   display: none;
 }
 
+.nav-links-cont {
+  display: none;
+}
+
 .fa-bars {
   color: #FCFCFD;
   border: 1.5px solid #ffffff50;
@@ -93,14 +98,16 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  background: green;
-  padding-bottom: 5%;
-  padding-top: 1%;
-  padding-left: 10%;
+  background: #1c343f;
+  padding-bottom: 2.5%;
+  padding-top: 2.5%;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.scroll-active {
+.scroll-ul {
   -webkit-clip-path: inset(0px 0px 100% 0px);
           clip-path: inset(0px 0px 100% 0px);
   -webkit-transition: 1s -webkit-clip-path ease;
@@ -109,7 +116,7 @@ li {
   transition: 1s clip-path ease, 1s -webkit-clip-path ease;
 }
 
-.scroll-inactive {
+.scroll-active {
   -webkit-clip-path: inset(0px 0px 0% 0px);
           clip-path: inset(0px 0px 0% 0px);
 }
@@ -117,6 +124,10 @@ li {
 .scroll-menu-container a {
   color: #FCFCFD;
   text-decoration: none;
+}
+
+#login {
+  display: none;
 }
 
 @media only screen and (min-width: 769px) {
@@ -129,6 +140,9 @@ li {
   #bg-img-web {
     display: none;
   }
+  #login {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -139,6 +153,49 @@ li {
     display: none;
   }
   #bg-img-web {
+    display: block;
+  }
+  .navbar ul {
+    display: block;
+  }
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .nav-links-cont {
+    height: 100%;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  .nav-links-cont {
+    display: block;
+  }
+  .navbar ul {
+    gap: 30px;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  .logo {
+    -ms-flex-preferred-size: 54%;
+        flex-basis: 54%;
+  }
+  #login {
+    background-color: #E66F51;
+    color: #FCFCFD;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 2px;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    cursor: pointer;
     display: block;
   }
 }
