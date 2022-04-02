@@ -67,3 +67,20 @@ slideContainer.addEventListener('mouseenter', () => {
 slideContainer.addEventListener('mouseleave', startSlide);
 
 startSlide();
+
+/*FAQ*/
+//https://www.youtube.com/watch?v=4qnWreynXLU 
+const faqs = document.querySelectorAll(".faq"); 
+const quess = document.querySelectorAll(".question");
+
+faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    })
+});
+
+quess.forEach((ques) => {
+    ques.addEventListener("click", () => {
+        ques.classList.toggle("blue");
+    });
+});

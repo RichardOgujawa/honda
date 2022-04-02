@@ -18,6 +18,7 @@ This is a redesign of a <a href="https://devhonufa.github.io/honda/"> website by
 - Visual Studio Code
 - Git Bash
 - Inspector Tool
+- <a href="https://www.symbolcopy.com/star-symbol.html">SymbolsCopy.com</a>
 
 ## CDNs used
 - <a href ="https://fontawesome.com/v4/get-started/"> Font Awesome CDN </a>
