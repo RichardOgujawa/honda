@@ -1,3 +1,4 @@
+@media only screen and (max-width: 768px){
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
 
 
@@ -20,6 +21,7 @@ $font-small: 11pt;
 html {
     scroll-behavior: smooth;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,7 +38,7 @@ h2 {
 }
 
 .bg {
-    width: 100%;
+    display: none;
 }
 
 #bg-img-mob {
@@ -192,6 +194,7 @@ header {
     padding: 10px;
 }
 
+//FEATURED
 .featured {
     width: 100%;
     overflow: hidden;
@@ -301,7 +304,7 @@ header {
 }
 
 .testimonials {
-    width: 100%; 
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,15 +312,16 @@ header {
     text-align: center;
 }
 
-.testimonials > h2 {
-    margin-bottom: 12%;
+.testimonials>h2 {
+    margin-bottom: 12px;
+    margin-top: 0px;
 }
 
-.testimonials > h2 > span {
+.testimonials>h2>span {
     color: $burnt-sienna;
 }
 
-.testimonials section{
+.testimonials section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -326,20 +330,21 @@ header {
     border: 1px solid #80808050;
     padding: 3%;
     margin: 2%;
+    border-radius: 2px;
 }
 
-.testimonials img{
+.testimonials img {
     width: 25%;
 }
 
-.testimonials > section:nth-of-type(3) > img{
+.testimonials>section:nth-of-type(3)>img {
     width: 39%;
     clip-path: circle(59px);
 }
 
-.testimonials p:nth-of-type(2){
+.testimonials p:nth-of-type(2) {
     color: rgb(0, 98, 255);
-    font-weight:550;
+    font-weight: 550;
 }
 
 /*FAQ*/
@@ -350,21 +355,22 @@ header {
     align-items: center;
 }
 
-.faq>h2>span{
+.faq>h2>span {
     color: $burnt-sienna;
 }
 
-.faq img{
+.faq img {
     width: 90%;
 }
 
 .faqSect {
     min-height: 100vh;
-    width:90%; 
-    margin: 0 auto; 
-    display: flex; 
-    flex-direction: column; 
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 
 .title span {
@@ -372,18 +378,22 @@ header {
 }
 
 .title {
-    font-size: $font-large; 
-    margin: 5rem 0rem 2rem 0rem;
+    font-size: $font-large;
+    margin: 4rem 3rem 2rem 0rem;
 }
 
-.faq {
-    width: 100%; 
-    padding-bottom: 1rem;
-    border: 2px solid rgba(128, 128, 128, 0.171); 
+.faqContainer {
     border-radius: 3px;
-}  
+    border: 2px solid rgba(128, 128, 128, 0.171);
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
 
-.question {
+.ques1,
+.ques2,
+.ques3,
+.ques4 {
     cursor: pointer;
     width: 100%;
     padding: 5%;
@@ -392,56 +402,108 @@ header {
     gap: 3px;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.171); 
+    padding-bottom: 1.5rem;
     border: 3px solid transparent;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.171);
+    transition: 1s ease;
 
 }
 
-.question h3 {
+.ques1 h3,
+.ques2 h3,
+.ques3 h3,
+.ques4 h3 {
     font-size: $font-small;
 }
 
-.answer {
-    max-height: 0; 
+.ans1,
+.ans2,
+.ans3,
+.ans4 {
+    max-height: 0;
     overflow: hidden;
     transition: 1s max-height ease;
-
 }
-.answer p {
+
+.ans1 p,
+.ans2 p,
+.ans3 p,
+.ans4 p {
     font-size: $font-small;
     width: 100%;
     padding: 5%;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.171); 
+    border-bottom: 2px solid rgba(128, 128, 128, 0.171);
+    transition: 1.3s ease;
 }
 
-.faq.active .answer {
+.faq1.active .ans1,
+.faq2.active .ans2,
+.faq3.active .ans3,
+.faq4.active .ans4 {
     max-height: 300px;
 }
 
-.blue{
+.fa1,
+.fa2,
+.fa3,
+.fa4 {
+    transform: rotate(0deg);
+    transition: 0.3s ease;
+}
+
+.faq1.active .fa1,
+.faq2.active .fa2,
+.faq3.active .fa3,
+.faq4.active .fa4 {
+    transform: rotate(180deg);
+}
+
+.blue {
     background: $light-columbia-blue;
     color: $blue;
     border: 3px solid $blue;
     border-radius: 3px;
 }
 
+//FOOTER
+footer {
+    background: black;
+    color: white;
+    padding: 5%;
+    display: flex; 
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 4rem;
+}
 
+footer p {
+    color: rgb(200, 200, 200);
+}
 
+footer ul{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
+footer section {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+    align-items: center;
+}
+
+footer section img{
+    width: 100%;
+}
+
+}
 
 //TABLET//
-@media only screen and (min-width: 769px) {
-    #bg-img-mob {
-        display: none;
-    }
+@media only screen and (min-width: 769px) and (max-width: 991px) {
 
-    #bg-img-tab {
-        display: block;
-    }
-
-    #bg-img-web {
-        display: none;
+    *{
+        font-family: serif;
     }
 
     #login {

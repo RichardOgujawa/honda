@@ -25,4 +25,10 @@ This is a redesign of a <a href="https://devhonufa.github.io/honda/"> website by
 
 ## What I learned 
 - Use CDN's for font - faster loading time
-- Start by desigining the mobile view version firs and then expand it from there.
+- Start by desigining the mobile view version first and then expand it from there.
+- Flexbox, Grids, CSS Selectors, JS Selectors. 
+- The logic behind an infinitely scrolling carousel
+
+## What I need to figure out
+- How to use Media Queries properly
+- How to not allow the hidden scroll-ui to affect the rest of the screen

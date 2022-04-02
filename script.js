@@ -3,7 +3,6 @@ function menuScrollFunc(){
 const menuScroll = document.querySelector('.scroll-ul');
 
 menuScroll.classList.toggle('scroll-active');
-
 }
 
 
@@ -70,17 +69,76 @@ startSlide();
 
 /*FAQ*/
 //https://www.youtube.com/watch?v=4qnWreynXLU 
-const faqs = document.querySelectorAll(".faq"); 
-const quess = document.querySelectorAll(".question");
+const faq1 = document.querySelector(".faq1"); 
+const ques1 = document.querySelector(".ques1");
+const faq2 = document.querySelector(".faq2"); 
+const ques2 = document.querySelector(".ques2");
+const faq3 = document.querySelector(".faq3"); 
+const ques3 = document.querySelector(".ques3");
+const faq4 = document.querySelector(".faq4"); 
+const ques4 = document.querySelector(".ques4");
 
-faqs.forEach((faq) => {
-    faq.addEventListener("click", () => {
-        faq.classList.toggle("active");
-    })
+//FIRST FAQ
+faq1.addEventListener("click", () => {
+    faq2.classList.remove("active");
+    faq3.classList.remove("active");
+    faq4.classList.remove("active");
+    faq1.classList.toggle("active");
 });
 
-quess.forEach((ques) => {
-    ques.addEventListener("click", () => {
-        ques.classList.toggle("blue");
-    });
+ques1.addEventListener("click", () => {
+    ques2.classList.remove("blue");
+    ques3.classList.remove("blue");
+    ques4.classList.remove("blue");
+    ques1.classList.toggle("blue");
 });
+
+//SECOND FAQ
+faq2.addEventListener("click", () => {
+    faq1.classList.remove("active");
+    faq3.classList.remove("active");
+    faq4.classList.remove("active");
+    faq2.classList.toggle("active");
+
+});
+
+ques2.addEventListener("click", () => {
+    ques1.classList.remove("blue");
+    ques3.classList.remove("blue");
+    ques4.classList.remove("blue");
+    ques2.classList.toggle("blue");
+
+});
+
+//THIRD FAQ
+faq3.addEventListener("click", () => {
+    faq2.classList.remove("active");
+    faq1.classList.remove("active");
+    faq4.classList.remove("active");
+    faq3.classList.toggle("active");
+});
+
+ques3.addEventListener("click", () => {
+    ques1.classList.remove("blue");
+    ques2.classList.remove("blue");
+    ques4.classList.remove("blue");
+    ques3.classList.toggle("blue");
+
+});
+
+//FOURTH FAQ
+faq4.addEventListener("click", () => {
+    faq2.classList.remove("active");
+    faq1.classList.remove("active");
+    faq3.classList.remove("active");
+    faq4.classList.toggle("active");
+});
+
+ques4.addEventListener("click", () => {
+    ques1.classList.remove("blue");
+    ques2.classList.remove("blue");
+    ques3.classList.remove("blue");
+    ques4.classList.toggle("blue");
+
+});
+
