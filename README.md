@@ -1,3 +1,5 @@
+### Disclaimer
+This website only looks good and works properly in mobile view at the moment, so please resize the window to it's smallest width to see the site work properly. 
 
 # Practice 001 
 This website is solely for the purposes of practising creating websites from scratch. 
